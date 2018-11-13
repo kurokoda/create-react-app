@@ -74,8 +74,8 @@ module.exports = {
     // Generated JS file names (with nested folders).
     // There will be one main bundle, and one file per asynchronous chunk.
     // We don't currently advertise code splitting but Webpack supports it.
-    filename: `static/js/[name].${sanitizedBuildNumber}.js`
-    chunkFilename: `static/js/[name].${sanitizedBuildNumber}.chunk.js`
+    filename: `static/js/[name].${sanitizedBuildNumber}.js`,
+    chunkFilename: `static/js/[name].${sanitizedBuildNumber}.chunk.js`,
     // We inferred the "public path" (such as / or /my-project) from homepage.
     publicPath: publicPath,
     // Point sourcemap entries to original disk location (format as URL on Windows)
@@ -163,7 +163,7 @@ module.exports = {
           // "url" loader works just like "file" loader but it also embeds
           // assets smaller than specified size as data URLs to avoid requests.
           {
-            test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+            test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/, /\.svg$/,],
             loader: require.resolve('url-loader'),
             options: {
               limit: 10000,

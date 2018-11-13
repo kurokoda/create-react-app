@@ -1,6 +1,6 @@
 {
-  "name": "@kurokoda/tylt-react-scripts",
-  "version": "1.1.5",
+  "name": "@kurokoda/tylt-web-react-scripts",
+  "version": "1.1.51",
   "description": "Configuration and scripts for custom Tylt Create React App.",
   "repository": "facebookincubator/create-react-app",
   "license": "MIT",
